@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    
+    <h1 class="main" style="text-align: center;">Drishya AI Lab</h1>
+    <table align='center' cellspacing=9 cellpadding=9 id="data_table" border=3>
+        <tr>
+            <th>First-Name</th>
+            <th>Last-Name</th>
+            <th>Marks</th>
+        </tr>
+        
+        <tr id="row1">
+            <td>Faisal</td>
+            <td>Alim</td>
+            <td>98</td>
+        <td>
+         <input type="button" value="Delete" class="delete" onclick="delete_row;once();('1')">
+        </td>
+        </tr>
+        
+        <tr id="row2">
+            <td>Fahad</td>
+            <td>Alim</td>
+            <td>97</td>
+            <td>
+               <input type="button" value="Delete" class="delete" onclick="delete_row('2');once();">
+            </td>
+        </tr>
+        
+        
+        <tr id="row3">
+            <td>Kashif</td>
+            <td>Alim</td>
+            <td>91</td>
+        <td>
+       <input type="button" value="Delete" class="delete" onclick="delete_row('3');once();;">
+        </td>
+        </tr>
+        
+        <tr>
+        <td><input type="text" id="new_row1"></td>
+        <td><input type="text" id="new_row2"></td>
+        <td><input type="text" id="new_row3" ></td>
+        <td><input type="button" class="add" onclick="add_row();once();" value="Add row"></td>
+        </tr>
+
+    </table>
+    <span id="val" style="margin-left: 255px;"></span>
+
+
+
+ 
+
+    <script src="./main.js"></script>
+        
+</body>
+</html>
